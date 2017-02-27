@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="test"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="lib/jruby-complete.jar"/>
-	<classpathentry kind="lib" path="/Kettle trunk/libext/commons/commons-io-1.4.jar"/>
-	<classpathentry kind="lib" path="/Kettle trunk/libswt/osx64/swt.jar"/>
-	<classpathentry kind="lib" path="/Kettle trunk/distrib/lib/kettle-core.jar"/>
-	<classpathentry kind="lib" path="/Kettle trunk/distrib/lib/kettle-db.jar"/>
-	<classpathentry kind="lib" path="/Kettle trunk/distrib/lib/kettle-dbdialog.jar"/>
-	<classpathentry kind="lib" path="/Kettle trunk/distrib/lib/kettle-engine.jar"/>
-	<classpathentry kind="lib" path="/Kettle trunk/distrib/lib/kettle-test.jar"/>
-	<classpathentry kind="lib" path="/Kettle trunk/distrib/lib/kettle-ui-swt.jar"/>
-	<classpathentry kind="lib" path="/Kettle trunk/libext/commons/commons-lang-2.4.jar"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src/main/plugin"/>
+	<classpathentry kind="src" path="src/main/assembly"/>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
 </classpath>
