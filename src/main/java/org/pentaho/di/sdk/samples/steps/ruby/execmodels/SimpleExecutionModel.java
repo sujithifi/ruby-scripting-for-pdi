@@ -112,16 +112,16 @@ public class SimpleExecutionModel implements ExecutionModel {
 		String gemHomeString = step.environmentSubstitute(meta.getGemHome());
 
 		// if not, fall back to RUBY_GEM_HOME
-		if (Utils.isEmpty(gemHomeString) && !Utils.isEmpty(step.getVariable("RUBY_GEM_HOME"))) {
+		if (Const.isEmpty(gemHomeString) && !Const.isEmpty(step.getVariable("RUBY_GEM_HOME"))) {
 			gemHomeString = step.environmentSubstitute("${RUBY_GEM_HOME}");
 		}
 
 		// if that fails, use the standard one
-		if (Utils.isEmpty(gemHomeString)) {
+		if (Const.isEmpty(gemHomeString)) {
 			gemHomeString = step.getPluginDir() + Const.FILE_SEPARATOR + "gems";
 		}
 
-		if (!Utils.isEmpty(gemHomeString)) {
+		if (!Const.isEmpty(gemHomeString)) {
 
 			File gemHomePath = new File(gemHomeString);
 			gemHomePath = gemHomePath.getAbsoluteFile();
