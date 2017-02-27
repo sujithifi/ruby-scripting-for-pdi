@@ -115,7 +115,7 @@ class ScriptValuesHighlight implements LineStyleListener {
 		default:
 			return new StyleRange(start, end, colors[COLOR_BLACK], null, SWT.NORMAL);
 		case TOKEN_STRING:
-			return new StyleRange(start, end, colors[COLOR_GREEN], null, SWT.ITALIC);
+			return new StyleRange(start, end, colors[COLOR_GREEN], null, SWT.NORMAL);
 		case TOKEN_SYMBOL:
 			return new StyleRange(start, end, colors[COLOR_GREEN], null, SWT.NORMAL);
 		case TOKEN_KEYWORD:
