@@ -24,9 +24,9 @@
     <!--  <dependency.pentaho-metadata.revision>7.0.0.0-25</dependency.pentaho-metadata.revision>
     <eula.wrap.phase></eula.wrap.phase>
     <dependency.kettle.revision>7.0.0.0-25</dependency.kettle.revision> -->
-    <dependency.pentaho-metadata.revision>7.0.0.0-25</dependency.pentaho-metadata.revision>
+    <dependency.pentaho-metadata.revision>7.0.0.3-64</dependency.pentaho-metadata.revision>
     <eula.wrap.phase></eula.wrap.phase>
-    <dependency.kettle.revision>7.0.0.0-25</dependency.kettle.revision>
+    <dependency.kettle.revision>7.0.0.3-64</dependency.kettle.revision>
     <junit.version>4.12</junit.version>
   </properties>
   <repositories>
